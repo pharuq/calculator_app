@@ -1,0 +1,20 @@
+PODS:
+  - Expression (0.12.11)
+  - Repro (3.0.4)
+
+DEPENDENCIES:
+  - Expression
+  - Repro (= 3.0.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Expression
+    - Repro
+
+SPEC CHECKSUMS:
+  Expression: e95e5008e48a066c90b40c7962823d252e908440
+  Repro: 9b09409ae99bd9dfb4ebb04708497de3a94b9155
+
+PODFILE CHECKSUM: 82ec2c85ea552cad57cefbaf549258a39234a2ac
+
+COCOAPODS: 1.5.3

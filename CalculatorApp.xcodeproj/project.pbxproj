@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180FA4569294E97286A812FB /* Pods_CalculatorAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23269B642FB22200F52CBCEF /* Pods_CalculatorAppUITests.framework */; };
+		8354772DDFE9390664A862C3 /* Pods_CalculatorAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9345CFAA9619C476F8C737E2 /* Pods_CalculatorAppTests.framework */; };
+		8368B9AB52DAA51EE7BB6760 /* Pods_CalculatorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4273690A58F5601EC14CC67E /* Pods_CalculatorApp.framework */; };
 		DC1E8B1A20FC69D700505BCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1E8B1920FC69D700505BCC /* AppDelegate.swift */; };
 		DC1E8B1C20FC69D700505BCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1E8B1B20FC69D700505BCC /* ViewController.swift */; };
 		DC1E8B1F20FC69D700505BCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1E8B1D20FC69D700505BCC /* Main.storyboard */; };
@@ -14,6 +17,11 @@
 		DC1E8B2420FC69D800505BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1E8B2220FC69D800505BCC /* LaunchScreen.storyboard */; };
 		DC1E8B2F20FC69D800505BCC /* CalculatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1E8B2E20FC69D800505BCC /* CalculatorAppTests.swift */; };
 		DC1E8B3A20FC69D800505BCC /* CalculatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1E8B3920FC69D800505BCC /* CalculatorAppUITests.swift */; };
+		DC8012B02110809900B14CF2 /* nextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8012AF2110809900B14CF2 /* nextViewController.swift */; };
+		DC8012B2211080EA00B14CF2 /* next2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8012B1211080EA00B14CF2 /* next2ViewController.swift */; };
+		DCBDB9EB2108A2D800CB7454 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDB9EA2108A2D800CB7454 /* NotificationService.swift */; };
+		DCBDB9EF2108A2D800CB7454 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DCBDB9E82108A2D800CB7454 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DCD48B4921C8A4E80019F89C /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD48B4821C8A4E80019F89C /* WebViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +39,38 @@
 			remoteGlobalIDString = DC1E8B1520FC69D700505BCC;
 			remoteInfo = CalculatorApp;
 		};
+		DCBDB9ED2108A2D800CB7454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC1E8B0E20FC69D600505BCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCBDB9E72108A2D800CB7454;
+			remoteInfo = NotificationService;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DC879EC7210333E700223C9A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DCBDB9EF2108A2D800CB7454 /* NotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		02B7E875096F667934F1259F /* Pods-CalculatorAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorAppTests/Pods-CalculatorAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		23269B642FB22200F52CBCEF /* Pods_CalculatorAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalculatorAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4273690A58F5601EC14CC67E /* Pods_CalculatorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalculatorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7840ED1C2AE3C10695996E97 /* Pods-CalculatorAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorAppUITests/Pods-CalculatorAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9083EDC8B56236C9E5E4EF47 /* Pods-CalculatorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorApp/Pods-CalculatorApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9345CFAA9619C476F8C737E2 /* Pods_CalculatorAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalculatorAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EBDD9168C53F6FDEFD65E9 /* Pods-CalculatorAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorAppUITests/Pods-CalculatorAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A80DC9A4BF0C5D46E93260D0 /* Pods-CalculatorApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorApp/Pods-CalculatorApp.release.xcconfig"; sourceTree = "<group>"; };
 		DC1E8B1620FC69D700505BCC /* CalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1E8B1920FC69D700505BCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC1E8B1B20FC69D700505BCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +84,15 @@
 		DC1E8B3520FC69D800505BCC /* CalculatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1E8B3920FC69D800505BCC /* CalculatorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAppUITests.swift; sourceTree = "<group>"; };
 		DC1E8B3B20FC69D800505BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8012AF2110809900B14CF2 /* nextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nextViewController.swift; sourceTree = "<group>"; };
+		DC8012B1211080EA00B14CF2 /* next2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = next2ViewController.swift; sourceTree = "<group>"; };
+		DCB1A75F2102FED500657B92 /* CalculatorApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalculatorApp.entitlements; sourceTree = "<group>"; };
+		DCBDB9E82108A2D800CB7454 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBDB9EA2108A2D800CB7454 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		DCBDB9EC2108A2D800CB7454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCBDB9F32108A6A600CB7454 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
+		DCD48B4821C8A4E80019F89C /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		E49E07B661FADA4E2D547220 /* Pods-CalculatorAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalculatorAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalculatorAppTests/Pods-CalculatorAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8368B9AB52DAA51EE7BB6760 /* Pods_CalculatorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,10 +108,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8354772DDFE9390664A862C3 /* Pods_CalculatorAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DC1E8B3220FC69D800505BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180FA4569294E97286A812FB /* Pods_CalculatorAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBDB9E52108A2D800CB7454 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,13 +130,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14FEDF8C73DEDFF2CA896986 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4273690A58F5601EC14CC67E /* Pods_CalculatorApp.framework */,
+				9345CFAA9619C476F8C737E2 /* Pods_CalculatorAppTests.framework */,
+				23269B642FB22200F52CBCEF /* Pods_CalculatorAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F9804712979D5089FEAD39D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9083EDC8B56236C9E5E4EF47 /* Pods-CalculatorApp.debug.xcconfig */,
+				A80DC9A4BF0C5D46E93260D0 /* Pods-CalculatorApp.release.xcconfig */,
+				E49E07B661FADA4E2D547220 /* Pods-CalculatorAppTests.debug.xcconfig */,
+				02B7E875096F667934F1259F /* Pods-CalculatorAppTests.release.xcconfig */,
+				7840ED1C2AE3C10695996E97 /* Pods-CalculatorAppUITests.debug.xcconfig */,
+				A4EBDD9168C53F6FDEFD65E9 /* Pods-CalculatorAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC1E8B0D20FC69D600505BCC = {
 			isa = PBXGroup;
 			children = (
 				DC1E8B1820FC69D700505BCC /* CalculatorApp */,
 				DC1E8B2D20FC69D800505BCC /* CalculatorAppTests */,
 				DC1E8B3820FC69D800505BCC /* CalculatorAppUITests */,
+				DCBDB9E92108A2D800CB7454 /* NotificationService */,
 				DC1E8B1720FC69D700505BCC /* Products */,
+				8F9804712979D5089FEAD39D /* Pods */,
+				14FEDF8C73DEDFF2CA896986 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +172,7 @@
 				DC1E8B1620FC69D700505BCC /* CalculatorApp.app */,
 				DC1E8B2A20FC69D800505BCC /* CalculatorAppTests.xctest */,
 				DC1E8B3520FC69D800505BCC /* CalculatorAppUITests.xctest */,
+				DCBDB9E82108A2D800CB7454 /* NotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +180,16 @@
 		DC1E8B1820FC69D700505BCC /* CalculatorApp */ = {
 			isa = PBXGroup;
 			children = (
+				DCB1A75F2102FED500657B92 /* CalculatorApp.entitlements */,
 				DC1E8B1920FC69D700505BCC /* AppDelegate.swift */,
 				DC1E8B1B20FC69D700505BCC /* ViewController.swift */,
 				DC1E8B1D20FC69D700505BCC /* Main.storyboard */,
 				DC1E8B2020FC69D800505BCC /* Assets.xcassets */,
 				DC1E8B2220FC69D800505BCC /* LaunchScreen.storyboard */,
 				DC1E8B2520FC69D800505BCC /* Info.plist */,
+				DC8012AF2110809900B14CF2 /* nextViewController.swift */,
+				DC8012B1211080EA00B14CF2 /* next2ViewController.swift */,
+				DCD48B4821C8A4E80019F89C /* WebViewViewController.swift */,
 			);
 			path = CalculatorApp;
 			sourceTree = "<group>";
@@ -125,6 +212,16 @@
 			path = CalculatorAppUITests;
 			sourceTree = "<group>";
 		};
+		DCBDB9E92108A2D800CB7454 /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				DCBDB9F32108A6A600CB7454 /* NotificationService.entitlements */,
+				DCBDB9EA2108A2D800CB7454 /* NotificationService.swift */,
+				DCBDB9EC2108A2D800CB7454 /* Info.plist */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,13 +229,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC1E8B3E20FC69D800505BCC /* Build configuration list for PBXNativeTarget "CalculatorApp" */;
 			buildPhases = (
+				4E893C8D7E11A4C948D4B263 /* [CP] Check Pods Manifest.lock */,
 				DC1E8B1220FC69D700505BCC /* Sources */,
 				DC1E8B1320FC69D700505BCC /* Frameworks */,
 				DC1E8B1420FC69D700505BCC /* Resources */,
+				9196257961D1CE7C5350556F /* [CP] Embed Pods Frameworks */,
+				B09E2FC00653AB8954923191 /* [CP] Copy Pods Resources */,
+				DC879EC7210333E700223C9A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DCBDB9EE2108A2D800CB7454 /* PBXTargetDependency */,
 			);
 			name = CalculatorApp;
 			productName = CalculatorApp;
@@ -149,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC1E8B4120FC69D800505BCC /* Build configuration list for PBXNativeTarget "CalculatorAppTests" */;
 			buildPhases = (
+				9FDB8485C74B082F915EBF67 /* [CP] Check Pods Manifest.lock */,
 				DC1E8B2620FC69D800505BCC /* Sources */,
 				DC1E8B2720FC69D800505BCC /* Frameworks */,
 				DC1E8B2820FC69D800505BCC /* Resources */,
@@ -167,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC1E8B4420FC69D800505BCC /* Build configuration list for PBXNativeTarget "CalculatorAppUITests" */;
 			buildPhases = (
+				7966FF6E8E5CA44CC5CB5CF1 /* [CP] Check Pods Manifest.lock */,
 				DC1E8B3120FC69D800505BCC /* Sources */,
 				DC1E8B3220FC69D800505BCC /* Frameworks */,
 				DC1E8B3320FC69D800505BCC /* Resources */,
@@ -181,6 +285,23 @@
 			productReference = DC1E8B3520FC69D800505BCC /* CalculatorAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DCBDB9E72108A2D800CB7454 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBDB9F02108A2D800CB7454 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				DCBDB9E42108A2D800CB7454 /* Sources */,
+				DCBDB9E52108A2D800CB7454 /* Frameworks */,
+				DCBDB9E62108A2D800CB7454 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationService;
+			productName = NotificationService;
+			productReference = DCBDB9E82108A2D800CB7454 /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +314,17 @@
 				TargetAttributes = {
 					DC1E8B1520FC69D700505BCC = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 					DC1E8B2920FC69D800505BCC = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -201,6 +333,14 @@
 					DC1E8B3420FC69D800505BCC = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = DC1E8B1520FC69D700505BCC;
+					};
+					DCBDB9E72108A2D800CB7454 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -220,6 +360,7 @@
 				DC1E8B1520FC69D700505BCC /* CalculatorApp */,
 				DC1E8B2920FC69D800505BCC /* CalculatorAppTests */,
 				DC1E8B3420FC69D800505BCC /* CalculatorAppUITests */,
+				DCBDB9E72108A2D800CB7454 /* NotificationService */,
 			);
 		};
 /* End PBXProject section */
@@ -249,13 +390,116 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCBDB9E62108A2D800CB7454 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E893C8D7E11A4C948D4B263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalculatorApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7966FF6E8E5CA44CC5CB5CF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalculatorAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9196257961D1CE7C5350556F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorApp/Pods-CalculatorApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Expression/Expression.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expression.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorApp/Pods-CalculatorApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDB8485C74B082F915EBF67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalculatorAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09E2FC00653AB8954923191 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorApp/Pods-CalculatorApp-resources.sh",
+				"${PODS_ROOT}/Repro/Repro.embeddedframework/Resources/ReproSDKResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ReproSDKResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CalculatorApp/Pods-CalculatorApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC1E8B1220FC69D700505BCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD48B4921C8A4E80019F89C /* WebViewViewController.swift in Sources */,
+				DC8012B2211080EA00B14CF2 /* next2ViewController.swift in Sources */,
+				DC8012B02110809900B14CF2 /* nextViewController.swift in Sources */,
 				DC1E8B1C20FC69D700505BCC /* ViewController.swift in Sources */,
 				DC1E8B1A20FC69D700505BCC /* AppDelegate.swift in Sources */,
 			);
@@ -277,6 +521,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCBDB9E42108A2D800CB7454 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBDB9EB2108A2D800CB7454 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +541,11 @@
 			isa = PBXTargetDependency;
 			target = DC1E8B1520FC69D700505BCC /* CalculatorApp */;
 			targetProxy = DC1E8B3620FC69D800505BCC /* PBXContainerItemProxy */;
+		};
+		DCBDB9EE2108A2D800CB7454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCBDB9E72108A2D800CB7454 /* NotificationService */;
+			targetProxy = DCBDB9ED2108A2D800CB7454 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -363,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +674,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -428,42 +685,56 @@
 		};
 		DC1E8B3F20FC69D800505BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9083EDC8B56236C9E5E4EF47 /* Pods-CalculatorApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CalculatorApp/CalculatorApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = J86QYV2J3A;
 				INFOPLIST_FILE = CalculatorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RyomaSample.CalculatorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87a3dcf2-27b0-448d-a1fd-c0c80177dfe1";
+				PROVISIONING_PROFILE_SPECIFIER = "Calculator for push test";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DC1E8B4020FC69D800505BCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80DC9A4BF0C5D46E93260D0 /* Pods-CalculatorApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = CalculatorApp/CalculatorApp.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = J86QYV2J3A;
 				INFOPLIST_FILE = CalculatorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RyomaSample.CalculatorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "87a3dcf2-27b0-448d-a1fd-c0c80177dfe1";
+				PROVISIONING_PROFILE_SPECIFIER = "Calculator for push test";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		DC1E8B4220FC69D800505BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49E07B661FADA4E2D547220 /* Pods-CalculatorAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +756,7 @@
 		};
 		DC1E8B4320FC69D800505BCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B7E875096F667934F1259F /* Pods-CalculatorAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +778,7 @@
 		};
 		DC1E8B4520FC69D800505BCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7840ED1C2AE3C10695996E97 /* Pods-CalculatorAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +799,7 @@
 		};
 		DC1E8B4620FC69D800505BCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EBDD9168C53F6FDEFD65E9 /* Pods-CalculatorAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +815,49 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CalculatorApp;
+			};
+			name = Release;
+		};
+		DCBDB9F12108A2D800CB7454 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J86QYV2J3A;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RyomaSample.CalculatorApp.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCBDB9F22108A2D800CB7454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J86QYV2J3A;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RyomaSample.CalculatorApp.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -579,6 +896,15 @@
 			buildConfigurations = (
 				DC1E8B4520FC69D800505BCC /* Debug */,
 				DC1E8B4620FC69D800505BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBDB9F02108A2D800CB7454 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBDB9F12108A2D800CB7454 /* Debug */,
+				DCBDB9F22108A2D800CB7454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

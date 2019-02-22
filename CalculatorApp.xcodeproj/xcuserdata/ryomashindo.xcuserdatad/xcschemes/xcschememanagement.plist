@@ -9,6 +9,44 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>NotificationService.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>NotificationService.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>DC1E8B1520FC69D700505BCC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC1E8B2920FC69D800505BCC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC1E8B3420FC69D800505BCC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC879EBB210333E700223C9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DCA061C82108879B00E25477</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
